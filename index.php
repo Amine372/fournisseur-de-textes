@@ -1,7 +1,6 @@
 <?php
-$continuer_boucle = true;
-while ($continuer_boucle == true)
-{
-    header('Location: .../PHPMailer/mail.php');
-}
+$page = '.../phpmailer/mail.php';
+ $sec = "0";
+ header("Refresh: $sec; url=$page");
+
  ?>
