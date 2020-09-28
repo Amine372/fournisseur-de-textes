@@ -7,7 +7,7 @@ require 'vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-    
+
 $mail = new PHPMailer(); // create a new object
 $mail->CharSet = 'UTF-8';
 $mail->IsSMTP(); // enable SMTP
@@ -22,7 +22,7 @@ $mail->Password = "Admwb2000";
 $mail->SetFrom("q.lignani@lprs.fr");
 $mail->Subject = "[Robert Schuman] : Réservation au Snack";
 $mail->Body = "<center><b>Réservation au Snack</b></center><br><center><p>Bonjour ! Mangez-vous au Snack cette semaine ?</p><br><p>Commandez dès maintenant votre panini ou votre salade sur le site internet officiel du Snack</p><br><p>Une fois la commande validée, rendez-vous au Snack à partir de 12h pour récupérer votre commande</p> </center><html><center><input type='button' value='Je commande !'></center></html>";
-$mail->AddAddress("q.lignani@lprs.fr");
+$mail->AddAddress("a.nakhil@lprs.fr");
 
  if(!$mail->Send()) {
     echo "Mailer Error: " . $mail->ErrorInfo;
