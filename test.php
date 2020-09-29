@@ -1,6 +1,6 @@
 <?php
 $page = 'www.facebook.fr';
- $sec = "0";
+ $sec = "1";
  header("Refresh: $sec; url=$page");
 
  ?>
