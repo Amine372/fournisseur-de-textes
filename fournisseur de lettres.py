@@ -1,9 +1,23 @@
 import random
 import string
-a= random.choice(string.ascii_letters)
+a= random.randint(10,16)
+b=1
+c =0
+liste = []
+for i in range(10):
+    liste.append( random.randint(1,16) )
+while(b!=a):
+    for i in range (0,liste[i]):
+        mon_fichier = open("fichier.txt", "w")
+        mon_fichier.write(random.choice(string.ascii_letters))
+        50
+        mon_fichier.close()
+    mon_fichier = open("fichier.txt", "w")
+    mon_fichier.write(' ')
+    50
+    mon_fichier.close()
+    
 
-
-print(a)
 #mon_fichier = open("fichier.txt", "w")
 #mon_fichier.write("Premier test d'écriture dans un fichier via Python")
 #50
