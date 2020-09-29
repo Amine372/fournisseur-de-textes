@@ -1,6 +1,8 @@
-import string string.letters 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 import random
-a =random.choice(string.letters)
+import string
+a= random.choice(string.ascii_letters)
+
+
 print(a)
 #mon_fichier = open("fichier.txt", "w")
 #mon_fichier.write("Premier test d'écriture dans un fichier via Python")
