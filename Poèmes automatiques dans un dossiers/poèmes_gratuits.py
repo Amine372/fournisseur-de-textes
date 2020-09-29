@@ -1,7 +1,10 @@
 import os
 import random
 import string
-os.mkdir('Poèmes de Rams Nacks')
+import shutil
+os.mkdir('poemes_de_rams_nacks')
+abcd = "C:\wamp\www\fournisseur-de-textes\Poèmes automatiques dans un dossiers\'"
+efgh = "C:\wamp\www\fournisseur-de-textes\Poèmes automatiques dans un dossiers\poemes_de_rams_nacks\'"
 gh= int(input("Combien veux tu de poèmes ? (Fais toi plaisir tu ne les payes pas)"))
 
 for i in range (0,gh):
@@ -37,7 +40,7 @@ for i in range (0,gh):
     a = random.randint(0,9)
     h= ver8[a]
     a = random.randint(0,9)
-    i= ver9[a]
+    ii= ver9[a]
     a = random.randint(0,9)
     j= ver10[a]
     a = random.randint(0,9)
@@ -48,4 +51,39 @@ for i in range (0,gh):
     m= ver13[a]
     a = random.randint(0,9)
     n= ver14[a]
-
+    mon_fichier = open("poemes.txt", "w")
+    mon_fichier.write(str(ab))
+    mon_fichier.write("\n")
+    mon_fichier.write(str(b))
+    mon_fichier.write("\n")
+    mon_fichier.write(str(c))
+    mon_fichier.write("\n")
+    mon_fichier.write(str(d))
+    mon_fichier.write("\n")
+    mon_fichier.write(str(e))
+    mon_fichier.write("\n")
+    mon_fichier.write(str(f))
+    mon_fichier.write("\n")
+    mon_fichier.write(str(g))
+    mon_fichier.write("\n")
+    mon_fichier.write(str(h))
+    mon_fichier.write("\n")
+    mon_fichier.write(str(ii))
+    mon_fichier.write("\n")
+    mon_fichier.write(str(j))
+    mon_fichier.write("\n")
+    mon_fichier.write(str(k))
+    mon_fichier.write("\n")
+    mon_fichier.write(str(l))
+    mon_fichier.write("\n")
+    mon_fichier.write(str(m))
+    mon_fichier.write("\n")
+    mon_fichier.write(str(n))
+    mon_fichier.write("\n")
+    mon_fichier.close()
+    nbr= str(i)
+    nouveau_nom = "poeme"+nbr+".txt"
+    os.rename('poemes.txt', nouveau_nom)
+    deplacement_source= abcd +nouveau_nom
+    deplacement_destination = efgh +nouveau_nom
+    shutil.move(deplacement_source,deplacement_destination)
