@@ -3,7 +3,6 @@ import string
 mon_fichier = open("fichier.txt", "w")
 b=' '
 gh=0
-th= 0
 for i in range(0,10):
     while(gh!=10):
         liste = []
@@ -21,6 +20,6 @@ for i in range(0,10):
         del liste[0:16]
         b= ' '
     mon_fichier.write("\n")
-    th = th+1
+
 mon_fichier.close()
     
