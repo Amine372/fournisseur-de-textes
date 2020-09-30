@@ -3,11 +3,9 @@ import random
 import string
 import shutil
 os.mkdir('poemes_de_rams_nacks')
-abcd = "C:\wamp\www\fournisseur-de-textes\Poèmes automatiques dans un dossiers\'"
-efgh = "C:\wamp\www\fournisseur-de-textes\Poèmes automatiques dans un dossiers\poemes_de_rams_nacks\'"
 gh= int(input("Combien veux tu de poèmes ? (Fais toi plaisir tu ne les payes pas)"))
 
-for i in range (0,gh):
+for i in range (1,gh+1):
     ver1 =["le roi de la pampa retourne sa chemise","Lorsque Tout est fini, lorsuque l'on agonise","le cheval parthénon s'énerve sur sa frise","le vieux marin breton pris sa prise","c'était à cinq o'clock que sortait la marquise","du jeune avantageux, la nymphe était éprise","il se penche, il voulait attraper sa valise","quand l'un avec l'autre aussitot sympathise","lorsqu'un jour énorme, l'aède prosaise","le marbre pour l'acide est une friandise"]
     ver2 =["pour la mettre au sécher aux cornes des tauraux","lorsque le marbrier astique nos tombeaux","Depuis que lors Elgin négligea ses naseaux","pour de fin du fond du nez exciter les arceaux","pour consommer un thé puis des petits gateaux","snob un peu sur les bords des bords fondamentaux","que convoitait, c'est sur une horde d'escorc","se faire il se pourrait bien que ce soit des jumeaux","pour déplaire aux profanes aussi bien qu'aux idiots", "d'aucuns par dessus tout prisent les escargots"]
     ver3 =["le cornedbeef en boite empeste la remise","des etres indécis vous parlent sans franchise","Le mondialiste de ce temps pataugeait dans sa crise","Sur l'antique bahut, il choisit sa cerise","le chauffeur indigène attendait la brise","Une toge, il portait qui n'était pas de mise","il se penche et alors à sa grande surprise","la découverte, alors voilà qui traumatise","la critique lucide apercoit ce qu'il vise","sur la place, un forain de feu se gargarise"]
@@ -51,7 +49,7 @@ for i in range (0,gh):
     m= ver13[a]
     a = random.randint(0,9)
     n= ver14[a]
-    mon_fichier = open("poemes.txt", "w")
+    mon_fichier = open("poemes_de_rams_nacks\poemes.txt", "w")
     mon_fichier.write(str(ab))
     mon_fichier.write("\n")
     mon_fichier.write(str(b))
@@ -82,8 +80,5 @@ for i in range (0,gh):
     mon_fichier.write("\n")
     mon_fichier.close()
     nbr= str(i)
-    nouveau_nom = "poeme"+nbr+".txt"
-    os.rename('poemes.txt', nouveau_nom)
-    deplacement_source= abcd +nouveau_nom
-    deplacement_destination = efgh +nouveau_nom
-    shutil.move(deplacement_source,deplacement_destination)
+    nouveau_nom = "poemes_de_rams_nacks\poeme"+nbr+".txt"
+    os.rename('poemes_de_rams_nacks\poemes.txt', nouveau_nom)
