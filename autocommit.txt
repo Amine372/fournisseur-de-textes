@@ -1,3 +1,4 @@
+:loop
 Send("git add "texte_binaire.txt"" )
 Send("{ENTER}")
 :boucle  
@@ -11,4 +12,5 @@ set /a count = count + 1
 if %count%==30000 goto finboucle  
 goto boucle  
 :finboucle
+goto loop
   
