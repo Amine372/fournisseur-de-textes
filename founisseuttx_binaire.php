@@ -1,7 +1,8 @@
 <?php
 $ascii = array("0","1");
-
-array_rand ( array $array , int $num = 1 ) : int|string|array
+$min =0
+$max =1
+ $chif =rand ( int $min , int $max ) : int
 
 
 
