@@ -1,0 +1,8 @@
+Send("{TAB 4}" )                          tab 4 fois pour arriver sur les onglets  
+Send("{RIGHT 4}" )                           fleche droite 4 fois pour arriver sur l’onglet Paramètres  
+Send("{TAB}" )                                 Tab pour pointer la fenetre de selection des ecran  
+Send("{2}" )                                 2 pour selectionner le deuxième écran  
+Send("+{TAB 7}" )                           shift tab 7 fois pour pointer « etendre le bureau »  
+Send("{SPACE}" )                           Space pour cocher  
+Send("{ENTER}" )                           Entrée pour valider  
+  
